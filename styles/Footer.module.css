@@ -1,0 +1,20 @@
+.footer {
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  height: 150px;
+  background: var(--mainGreen);
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+.footer a {
+  color: var(--mainWhite);
+}

@@ -1,0 +1,32 @@
+.showcase {
+  height: 500px;
+  background: var(--mainBlue) url("/images/people-working-on-computers.jpg")
+    no-repeat center center/cover;
+}
+
+.showBox {
+  color: var(--mainWhite);
+  text-align: center;
+  height: 100%;
+  padding: 0 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.showBox h1 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 500px) {
+  .showBox {
+    padding: 0 1rem;
+  }
+
+  .showBox h1 {
+    font-size: 2rem;
+  }
+}

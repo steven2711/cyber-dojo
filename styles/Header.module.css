@@ -1,0 +1,54 @@
+/* Desktop */
+
+.header {
+  background: var(--navBackground);
+  color: var(--navLinks);
+  height: 4.5rem;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+.header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.logo {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 60%;
+  margin-left: 2rem;
+}
+
+.logo a {
+  color: var(--mainWhite);
+  letter-spacing: 0.5rem;
+}
+
+.logo a:hover {
+  color: var(--navLogoHover);
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 650px) {
+  .header {
+    padding: 0;
+  }
+
+  .header nav {
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+    margin-left: 1rem;
+  }
+}

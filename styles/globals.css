@@ -1,16 +1,34 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+:root {
+  --mainBlue: #0b2545;
+  --mainGreen: #197278;
+  --mainWhite: #eef4ed;
+  --mainRed: #db162f;
+  --mainPink: #ef798a;
+  --mainYellow: #f6ae2d;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+  /* RGBA Values for opacity (mobile nav menu) */
+  --mainBlueRGBA: rgba(11, 37, 69, 0.9);
 
-* {
-  box-sizing: border-box;
+  /* Navbar Basic Styles */
+  --navLogo: var(--mainWhite);
+  --navBackground: var(--mainGreen);
+  --navLinks: var(--mainWhite);
+  --navLinksHover: var(--mainYellow);
+
+  /* Navbar logo hover */
+  --navLogoHover: var(--mainYellow);
+
+  /* Navbar mobile styles */
+  --navMobileBackground: var(--mainBlueRGBA);
+  --navHamburger: var(--mainWhite);
+
+  /* Main */
+  --mainBackgroundColor: var(--mainWhite);
+
+  /* Footer Basic Styles */
+  --footerBackground: var(--mainGreen);
+
+  /* Buttons */
+  --mainButtonBackground: var(--mainBlue);
+  --mainButtonColor: var(--mainWhite);
 }
