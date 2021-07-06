@@ -1,4 +1,17 @@
-.section {
-  height: 300px;
-  background-color: blue;
+.section > div {
+  display: flex;
+}
+
+.section > div:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+  .section > div:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+
+  .section > div:nth-child(odd) {
+    flex-direction: column-reverse;
+  }
 }

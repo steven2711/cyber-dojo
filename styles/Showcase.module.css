@@ -1,5 +1,5 @@
 .showcase {
-  height: 500px;
+  height: 700px;
   background: var(--mainBlue)
     url("/images/people-working-on-computers-1920.jpg") no-repeat center
     center/cover;
@@ -23,6 +23,10 @@
 }
 
 @media (max-width: 500px) {
+  .showcase {
+    height: 500px;
+  }
+
   .showBox {
     padding: 0 1rem;
   }

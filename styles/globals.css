@@ -32,3 +32,31 @@
   --mainButtonBackground: var(--mainBlue);
   --mainButtonColor: var(--mainWhite);
 }
+
+/* Global Tag Styling */
+
+/* Section Styling */
+section {
+  padding: 2rem 10rem;
+}
+
+section h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  section {
+    padding: 3rem 4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  section {
+    padding: 3rem 1rem;
+  }
+
+  section h2 {
+    font-size: 2rem;
+  }
+}
