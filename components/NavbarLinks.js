@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Link from "next/link";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { removeDash } from "../helpers";
 
 const StyledNavbarLinks = styled.div`
   display: flex;
@@ -59,7 +60,8 @@ const StyledNavbarLinks = styled.div`
       transition-delay: 0.3s;
 
       &:nth-child(1) {
-        height: 40%;
+        height: 50%;
+        justify-content: space-evenly;
       }
 
       &:nth-child(2) {
@@ -82,7 +84,7 @@ export default function NavbarLinks({ open, setOpen }) {
         {paths.map((path, index) => (
           <li key={index}>
             <Link href={`/${path}`} onClick={() => setOpen(!open)}>
-              <a>{path}</a>
+              <a>{removeDash(path)}</a>
             </Link>
           </li>
         ))}
