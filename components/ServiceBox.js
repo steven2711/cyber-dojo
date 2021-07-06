@@ -1,5 +1,6 @@
 import styles from "../styles/ServiceBox.module.css";
 import Button from "./Button";
+import Image from "next/image";
 
 export default function ServiceBox({
   service: { title, excerpt, description, path, imagePath },
@@ -15,7 +16,7 @@ export default function ServiceBox({
         </div>
       </div>
       <div className={styles.image}>
-        <img src={imagePath} alt={title} />
+        <Image src={imagePath} alt={title} height={375} width={500} />
       </div>
     </div>
   );
