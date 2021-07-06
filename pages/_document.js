@@ -11,9 +11,9 @@ class MyDocument extends Document {
             href="/images/people-working-on-computers-1920.jpg"
             imagessrcset="/images/people-working-on-computers-1920.jpg 1920w, /images/people-working-on-computers-1024.jpg 1024w, /images/people-working-on-computers-540.jpg 540w"
           />
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preload" href="https://fonts.googleapis.com" />
           <link
-            rel="preconnect"
+            rel="preload"
             href="https://fonts.gstatic.com"
             crossOrigin="true"
           />
