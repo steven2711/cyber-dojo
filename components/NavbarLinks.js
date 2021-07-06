@@ -92,12 +92,12 @@ export default function NavbarLinks({ open, setOpen }) {
 
       <ul>
         <li>
-          <a href="#" target="_blank" rel="noopener">
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener">
             <FaFacebookF />
           </a>
         </li>
         <li>
-          <a href="#" target="_blank" rel="noopener">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener">
             <FaInstagram />
           </a>
         </li>
