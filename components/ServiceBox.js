@@ -9,6 +9,7 @@ export default function ServiceBox({
     <div className={styles.service}>
       <div className={styles.info}>
         <h3>{title}</h3>
+        <hr />
         <h4>{excerpt}</h4>
         <p>{description}</p>
         <div className={styles.button}>

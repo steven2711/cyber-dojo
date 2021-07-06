@@ -6,6 +6,10 @@
   width: 50%;
 }
 
+.info hr {
+  width: 92%;
+}
+
 .info h3 {
   font-size: 1.5rem;
   font-style: italic;
@@ -24,8 +28,16 @@
 .info h4,
 .info p,
 .button {
-  margin-bottom: 3rem;
   padding: 0 2rem;
+}
+
+.info h4,
+.info p {
+  margin: 2rem 0;
+}
+
+.button {
+  margin: 3rem 0;
 }
 
 .image {
@@ -49,11 +61,9 @@
     margin: 5rem 0;
   }
 
-  .info h3,
   .info h4,
-  .info p,
-  .button {
-    margin-bottom: 2.5rem;
+  .info p {
+    margin: 1.5rem 0;
   }
 }
 
@@ -63,10 +73,13 @@
     text-align: center;
   }
 
-  .info h3,
+  .info h3 {
+    margin-top: 2rem;
+  }
+
   .info h4,
   .info p {
-    margin: 3rem 0;
+    margin: 2rem 0;
   }
 
   .image {
@@ -79,11 +92,14 @@
 }
 
 @media (max-width: 540px) {
-  .info h3,
   .info h4,
   .info p {
     padding: 0;
     margin: 2rem 0;
+  }
+
+  .info hr {
+    width: 100%;
   }
 
   .button {

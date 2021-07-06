@@ -3,7 +3,7 @@ export const services = [
     title: "website development",
     excerpt: "make more with better design",
     description:
-      "Modern web design is about giving your customers an amazing online experience that ultimately leads them one action; buy your product or service. All websites are built with your customers in mind with a focus on speed, mobile responsiveness, SEO, logical page structure and with modern technologies.",
+      "Modern web design is about giving your customers an amazing online experience that ultimately leads them to one action; buy your product or service. All websites are built with your customers in mind with a focus on speed, mobile responsiveness, SEO, logical page structure and with modern technologies.",
     path: "/websites",
     imagePath: "/images/web-development.jpg",
   },
@@ -43,7 +43,7 @@ export const services = [
     title: "consultations",
     excerpt: "always free to chat",
     description:
-      "Wether you want a total website rebuild, SEO marketing strategy, social media management or just some tips to get started, I can help. No pressure at all! I live for this stuff! Feel free to give me us a call anytime.",
+      "Wether you want a total website rebuild, SEO marketing strategy, social media management or just some tips to get started, we can help. No pressure at all! We live for this stuff! Feel free to give us a call anytime.",
     path: "/contact",
     imagePath: "/images/consultations.jpg",
   },
