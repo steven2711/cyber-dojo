@@ -42,18 +42,19 @@ const StyledNavbarLinks = styled.div`
   @media (max-width: 950px) {
     position: fixed;
     overflow: hidden;
-
+    visibility: ${({ open }) => (open ? "visible" : "hidden")};
     top: 0;
     flex-direction: column;
     justify-content: center;
     height: 100vh;
     background-color: var(--navMobileBackground);
     color: var(--navLinks);
-    transition: all 0.3s ease;
+    transition: transform 0.3s;
     transform: ${({ open }) => (open ? "scale(1)" : "scale(0)")};
 
     ul {
       flex-direction: column;
+
       font-size: 1.5rem;
       opacity: ${({ open }) => (open ? "1" : "0")};
       transition: opacity 0.3s linear;
@@ -93,12 +94,12 @@ export default function NavbarLinks({ open, setOpen }) {
       <ul>
         <li>
           <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
-            <FaFacebookF />
+            <FaFacebookF title="Facebook" />
           </a>
         </li>
         <li>
           <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
-            <FaInstagram />
+            <FaInstagram title="Instagram" />
           </a>
         </li>
       </ul>

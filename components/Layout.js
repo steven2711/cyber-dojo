@@ -32,7 +32,7 @@ export default function Layout({
 
         {/* Facebook Meta Tags */}
 
-        <meta property="og:url" content="" />
+        <meta property="og:url" content="https://www.cyberdojo.io/" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
@@ -60,7 +60,8 @@ export default function Layout({
 
 Layout.defaultProps = {
   title: "Cyber Dojo | Building better online strategies for small businesses",
-  description: "",
+  description:
+    "Cyber Dojo is a digital development and marketing agency focuses on increasing businesses profitability through modern online methodologies.",
   keywords: "",
   imagePath: "",
 };
