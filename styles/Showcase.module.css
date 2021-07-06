@@ -1,7 +1,8 @@
 .showcase {
   height: 500px;
-  background: var(--mainBlue) url("/images/people-working-on-computers.jpg")
-    no-repeat center center/cover;
+  background: var(--mainBlue)
+    url("/images/people-working-on-computers-1920.jpg") no-repeat center
+    center/cover;
 }
 
 .showBox {
