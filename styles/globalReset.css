@@ -11,10 +11,10 @@ h3,
 h4,
 h5,
 h6,
-p,
 blockquote,
 pre,
 a,
+p,
 abbr,
 acronym,
 address,
@@ -87,6 +87,11 @@ video {
   font-family: "Encode Sans SC", sans-serif;
   vertical-align: baseline;
 }
+
+p {
+  font-family: "Open Sans Condensed", sans-serif !important;
+}
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,

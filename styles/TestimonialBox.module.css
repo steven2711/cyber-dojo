@@ -1,0 +1,116 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: #eef4ed;
+  max-width: 500px;
+  margin: 0 1rem;
+  padding: 3rem 4rem;
+  border-radius: 20px;
+  color: var(--mainBlue);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease 0s;
+}
+
+.box:hover {
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.imageBox {
+  width: 200px;
+}
+
+.image {
+  border-radius: 50%;
+}
+
+.info {
+  margin: 1.5rem 0;
+}
+
+.info > p {
+  position: relative;
+}
+
+.info > p:before {
+  content: "\201C";
+  color: var(--mainBlue);
+  font-size: 9rem;
+  font-weight: 500;
+  top: -3.8rem;
+  left: -2rem;
+  opacity: 0.1;
+  position: absolute;
+  text-shadow: none;
+}
+
+.info > p:after {
+  content: "\201D";
+  color: var(--mainBlue);
+  font-size: 9rem;
+  font-weight: 500;
+  opacity: 0.1;
+  position: absolute;
+  top: 7rem;
+  right: -1rem;
+  text-shadow: none;
+}
+
+.info p {
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+
+.infoTitle p:first-of-type > span {
+  font-size: 2rem;
+}
+
+.infoTitle p:nth-child(2) > span {
+  font-style: italic;
+}
+
+.infoTitle {
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 1100px) {
+  .box {
+    flex-direction: row;
+    max-width: 100%;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+  }
+
+  .info {
+    width: 200%;
+  }
+
+  .imageBox {
+    width: 70%;
+    margin-right: 2rem;
+  }
+
+  .info > p:after {
+    content: "";
+  }
+}
+
+@media (max-width: 540px) {
+  .box {
+    flex-direction: column;
+  }
+
+  .info {
+    width: 100%;
+  }
+
+  .imageBox {
+    margin: 0;
+  }
+
+  .info > p:before {
+    content: "";
+  }
+}

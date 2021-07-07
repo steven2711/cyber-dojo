@@ -19,7 +19,7 @@ export const services = [
     title: "digital marketing",
     excerpt: "get the word out",
     description:
-      "Do you know who is visiting your website? Are these your ideal customers? Do your ideal customers know you even exist? I've helped businesses learn the habits, trends, and interests of their ideal customers to maximize conversions with each visit to their website.",
+      "Do you know who is visiting your website? Are these your ideal customers? Do your ideal customers know you even exist? We've helped businesses learn the habits, trends, and interests of their ideal customers to maximize conversions with each visit to their website.",
     path: "/digital-marketing",
     imagePath: "/images/digital-marketing.jpg",
   },
