@@ -22,7 +22,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
           <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
             rel="stylesheet"
           />
         </Head>

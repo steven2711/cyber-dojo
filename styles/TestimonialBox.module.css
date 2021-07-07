@@ -46,18 +46,6 @@
   text-shadow: none;
 }
 
-.info > p:after {
-  content: "\201D";
-  color: var(--mainBlue);
-  font-size: 9rem;
-  font-weight: 500;
-  opacity: 0.1;
-  position: absolute;
-  top: 7rem;
-  right: -1rem;
-  text-shadow: none;
-}
-
 .info p {
   line-height: 1.5;
   font-size: 1.2rem;
@@ -90,10 +78,6 @@
   .imageBox {
     width: 70%;
     margin-right: 2rem;
-  }
-
-  .info > p:after {
-    content: "";
   }
 }
 
