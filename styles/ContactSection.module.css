@@ -1,4 +1,17 @@
 .section {
   height: 300px;
-  background-color: green;
+  background: linear-gradient(rgba(11, 37, 69, 0.8), rgba(11, 37, 69, 0.5)),
+    url("/images/contact-us.jpg") no-repeat center center/cover;
+  color: var(--mainWhite);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
+
+.section p {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+/* 1.5 for p on rest of document */

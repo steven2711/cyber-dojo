@@ -77,7 +77,13 @@ const StyledNavbarLinks = styled.div`
 `;
 
 export default function NavbarLinks({ open, setOpen }) {
-  const paths = ["websites", "seo", "digital-marketing", "about", "contact"];
+  const paths = [
+    "websites",
+    "seo",
+    "digital-marketing",
+    "business-solutions",
+    "contact",
+  ];
 
   return (
     <StyledNavbarLinks open={open}>

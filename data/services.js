@@ -32,11 +32,11 @@ export const services = [
     imagePath: "/images/branding.jpg",
   },
   {
-    title: "web hosting",
-    excerpt: "security when you need it",
+    title: "business solutions",
+    excerpt: "making your life easier",
     description:
-      "Reliable and secure web hosting. You'll receive continuous updates to your website when you need them.",
-    path: "/websites",
+      "Looking for the right software to solve your business needs can be a headache and quite pricey. There are many options to choose from and sometimes the software doesn't fit your needs exactly or you end up paying for a lot of tools and features you never use. We create solutions specific to your business needs without breaking the bank.",
+    path: "/business-solutions",
     imagePath: "/images/web-hosting.jpg",
   },
   {
