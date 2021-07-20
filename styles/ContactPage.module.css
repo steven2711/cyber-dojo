@@ -93,6 +93,15 @@
   margin-left: 0.5rem;
 }
 
+.example {
+  color: gray !important;
+  font-size: 0.9rem;
+}
+
+.contact form span {
+  color: red;
+}
+
 @media (max-width: 1300px) {
   .showcase {
     padding: 5rem 10rem;

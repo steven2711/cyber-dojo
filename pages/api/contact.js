@@ -8,6 +8,10 @@ export default function handler(req, res) {
   if (req.method === "POST") {
     const body = JSON.parse(req.body);
 
+    if (body.subject === "") {
+      body.subject = "General Question";
+    }
+
     const msg = {
       to: "steven@cyberdojo.co", // Change to your recipient
       from: "steven@cyberdojo.co", // Change to your verified sender

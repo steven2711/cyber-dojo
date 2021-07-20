@@ -51,8 +51,6 @@ export default function ContactPage() {
     });
   };
 
-  // if (res.ok) {
-
   return (
     <Layout title="Contact | Cyber Dojo">
       <ToastContainer
@@ -106,6 +104,7 @@ export default function ContactPage() {
               aria-describedby="enter email"
               placeholder="Email"
               name="email"
+              minLength="5"
               value={contactInfo.email}
               onChange={handleChange}
               required
@@ -115,6 +114,7 @@ export default function ContactPage() {
             <label htmlFor="phone">
               phone number<span>*</span>
             </label>
+            <span className={styles.example}>Example: 555-555-5555</span>
             <input
               type="tel"
               id="phone"
@@ -122,6 +122,8 @@ export default function ContactPage() {
               placeholder="Phone"
               name="phone"
               value={contactInfo.phone}
+              minLength="9"
+              pattern="^(1-)?\d{3}-\d{3}-\d{4}$"
               onChange={handleChange}
               required
             />
@@ -228,6 +230,7 @@ export default function ContactPage() {
               value={contactInfo.message}
               onChange={handleChange}
               required
+              minLength="5"
             ></textarea>
           </div>
 
