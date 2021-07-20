@@ -52,7 +52,11 @@ export default function ContactPage() {
   };
 
   return (
-    <Layout title="Contact | Cyber Dojo">
+    <Layout
+      title="Contact | Cyber Dojo"
+      description="Send us a message to see if our sevices are right for you! Our goal
+    is to ensure you choose the best option for your business needs. Fill out the form on this page to get started!"
+    >
       <ToastContainer
         position="top-right"
         autoClose={5000}
