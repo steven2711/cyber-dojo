@@ -31,6 +31,11 @@
   /* Buttons */
   --mainButtonBackground: var(--mainBlue);
   --mainButtonColor: var(--mainWhite);
+
+  /* Sizing */
+  --mainHeaderOneSize: 3rem;
+  --mainParagraphSize: 1.5rem;
+  --buttonTextSize: 1.1rem;
 }
 
 /* Global Tag Styling */

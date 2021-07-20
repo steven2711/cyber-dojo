@@ -2,7 +2,7 @@
   padding: 1rem 2rem;
   border-radius: 2rem;
   font-family: inherit;
-  font-size: 1.1rem;
+  font-size: var(--buttonTextSize);
   background-color: var(--mainButtonBackground);
   color: var(--mainButtonColor);
   border: none;

@@ -1,7 +1,7 @@
 import styles from "../styles/Button.module.css";
 import Link from "next/link";
 
-export default function Button({ text, link, path }) {
+export default function Button({ text, link, path, type }) {
   return (
     <>
       {link ? (
@@ -9,7 +9,7 @@ export default function Button({ text, link, path }) {
           <a className={styles.button}>{text}</a>
         </Link>
       ) : (
-        <button type="button" className={styles.button}>
+        <button type={type} className={styles.button}>
           {text}
         </button>
       )}
@@ -19,6 +19,7 @@ export default function Button({ text, link, path }) {
 
 Button.defaultProps = {
   text: "button",
+  type: "button",
   link: false,
   path: "/",
 };
