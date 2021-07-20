@@ -60,8 +60,9 @@
 }
 
 .formgroup input:not(.radioSection div input) {
-  height: 2.5rem;
+  height: 3rem;
   margin: 0.5rem 0;
+  font-size: 1rem;
   border-radius: 1rem;
   border: 1px solid var(--mainGreen);
 
