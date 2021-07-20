@@ -25,20 +25,21 @@ export default function ContactPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Update URL for production
+    setIsLoading(true);
 
     const res = await fetch(`${NEXT_URL}/api/contact`, {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
       body: JSON.stringify(contactInfo),
     });
 
     const data = await res.json();
 
     if (res.ok) {
-      console.log(data);
+      toast.success("We got your message!");
+      setIsLoading(false);
+    } else {
+      toast.error("Oops... something went wrong!");
+      setIsLoading(false);
     }
 
     setContactInfo({
@@ -51,15 +52,20 @@ export default function ContactPage() {
   };
 
   // if (res.ok) {
-  //   toast.success("We got your message!");
-  //   setIsLoading(false);
-  // } else {
-  //   toast.error("Oops... something went wrong!");
-  //   setIsLoading(false);
-  // }
 
   return (
     <Layout title="Contact | Cyber Dojo">
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable={false}
+        pauseOnHover
+      />
       <div className={styles.contact}>
         <div className={styles.showcase}>
           <h1>contact us</h1>
@@ -122,7 +128,7 @@ export default function ContactPage() {
           </div>
           <div className={styles.formgroup}>
             <label htmlFor="subject">
-              What are you interested in? (check all that apply)<span>*</span>
+              What are you interested in?<span>*</span>
             </label>
 
             <div className={styles.radioSection}>
@@ -217,7 +223,7 @@ export default function ContactPage() {
               className="form-control"
               type="text"
               id="message"
-              rows="4"
+              rows="10"
               name="message"
               value={contactInfo.message}
               onChange={handleChange}
@@ -225,8 +231,8 @@ export default function ContactPage() {
             ></textarea>
           </div>
 
-          <div>
-            <Button text="submit form" type="submit" />
+          <div className={styles.btnBox}>
+            <Button text="submit form" type="submit" isLoading={isLoading} />
           </div>
         </form>
       </div>

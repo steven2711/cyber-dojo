@@ -39,7 +39,7 @@ const StyledNavbarLinks = styled.div`
     padding-bottom: 3px;
   }
 
-  @media (max-width: 950px) {
+  @media (max-width: 1200px) {
     position: fixed;
     overflow: hidden;
     visibility: ${({ open }) => (open ? "visible" : "hidden")};

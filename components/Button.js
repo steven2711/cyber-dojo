@@ -1,7 +1,8 @@
 import styles from "../styles/Button.module.css";
 import Link from "next/link";
+import { FaToriiGate } from "react-icons/fa";
 
-export default function Button({ text, link, path, type }) {
+export default function Button({ text, link, path, type, isLoading }) {
   return (
     <>
       {link ? (
@@ -10,6 +11,7 @@ export default function Button({ text, link, path, type }) {
         </Link>
       ) : (
         <button type={type} className={styles.button}>
+          {isLoading ? <FaToriiGate className={styles.btnIcon} /> : null}
           {text}
         </button>
       )}
@@ -22,4 +24,5 @@ Button.defaultProps = {
   type: "button",
   link: false,
   path: "/",
+  isLoading: false,
 };
