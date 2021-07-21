@@ -1,5 +1,6 @@
 .service {
-  margin: 8rem 0;
+  margin: 7rem 0;
+  border: 1px solid red;
 }
 
 .info {
@@ -92,6 +93,10 @@
 }
 
 @media (max-width: 540px) {
+  .service {
+    margin: 2rem 0;
+  }
+
   .info h4,
   .info p {
     padding: 0;
