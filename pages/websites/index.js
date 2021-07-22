@@ -2,6 +2,7 @@ import Layout from "../../components/Layout";
 import styles from "../../styles/WebsitesPage.module.css";
 import Faq from "../../components/Faq";
 import Button from "../../components/Button";
+import ContactSection from "../../components/ContactSection";
 
 export default function WebsitesPage() {
   return (
@@ -13,8 +14,8 @@ export default function WebsitesPage() {
         <div className={styles.showcase}>
           <h1>websites</h1>
           <p>
-            Our primary goal is to build websites that help promote your
-            businesses products or services.
+            Our primary goal is to build websites that produce real value for
+            your business.
           </p>
           <div className={styles.btnBox}>
             <Button
@@ -29,7 +30,7 @@ export default function WebsitesPage() {
             <h2>research &amp; strategy</h2>
             <p>
               This is where we learn about your business and build a plan
-              that&apos;s right for you.
+              that&apos;s aligns with your goals.
             </p>
             <ul>
               <li>discovery</li>
@@ -44,7 +45,7 @@ export default function WebsitesPage() {
             <h2>branding</h2>
             <p>
               We collaborate with you to create a look that resonates with your
-              potential customers and communicates your values as a business.
+              potential customers and can communicate your values as a business.
             </p>
             <ul>
               <li>logos</li>
@@ -89,28 +90,33 @@ export default function WebsitesPage() {
 
           <div className={styles.service}>
             <h2>launch &amp; review</h2>
-            <p>We go live! </p>
+            <p>
+              We go live! During this phase we make last minute changes and fix
+              any bugs. Also, we provide any training needed to operate your new
+              site.
+            </p>
             <ul>
               <li>hosting</li>
-              <li></li>
-              <li>tone &amp; voice</li>
-              <li>typography</li>
-              <li>photography</li>
+              <li>security</li>
+              <li>website testing</li>
+              <li>customer feedback report</li>
+              <li>search engine indexing</li>
             </ul>
           </div>
 
           <div className={styles.service}>
-            <h2>maintenance</h2>
+            <h2>support services</h2>
             <p>
-              this is where we convert all of our research and branding
-              materials into a mock-up.
+              We become a trusted partner for your business. This option is
+              great to ensure that your online efforts are running smoothly.
             </p>
             <ul>
-              <li>UI/UX design</li>
-              <li></li>
-              <li>tone &amp; voice</li>
-              <li>typography</li>
-              <li>photography</li>
+              <li>site backups &amp; recovery</li>
+              <li>software updates</li>
+              <li>technical support &amp; troubleshooting</li>
+              <li>design &amp; development tweaks</li>
+              <li>content updates</li>
+              <li>monthly reporting</li>
             </ul>
           </div>
         </div>
@@ -118,6 +124,7 @@ export default function WebsitesPage() {
           <Faq />
         </div>
       </div>
+      <ContactSection />
     </Layout>
   );
 }

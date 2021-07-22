@@ -1,0 +1,66 @@
+.faq {
+  border: 1px solid red;
+  margin: 2rem auto;
+  width: 50%;
+}
+
+.faq h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.group {
+  border: 1px solid blue;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+}
+
+.group p {
+  margin: 1rem;
+}
+
+.questionBox {
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.answerBox {
+  opacity: 0;
+  height: 0;
+  overflow-y: hidden;
+  transition: all 0.4s ease;
+}
+
+.answerBox p {
+  opacity: 0;
+}
+
+.answerBoxOpen p {
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+.answerBoxOpen {
+  opacity: 1;
+  height: 2rem;
+  overflow-y: visible;
+  transition: all 0.4s ease;
+}
+
+.questionBox h3 {
+  font-size: 1.4rem;
+  margin: 1rem;
+}
+
+@media (max-width: 768px) {
+  .faq {
+    width: 75%;
+  }
+}
+
+@media (max-width: 540px) {
+  .faq {
+    width: 90%;
+  }
+}

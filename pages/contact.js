@@ -72,9 +72,9 @@ export default function ContactPage() {
         <div className={styles.showcase}>
           <h1>contact us</h1>
           <p>
-            Send us a message to see if our sevices are right for you! Even if
-            your needs are outside of our abilities, we are happy to point you
-            in the right direction. Fill out the form below to get started!
+            Let&apos;s talk! Even if your needs are outside of our abilities, we
+            are happy to point you in the right direction. Fill out the form
+            below to get started!
           </p>
         </div>
 

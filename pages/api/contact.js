@@ -14,7 +14,7 @@ export default function handler(req, res) {
 
     const msg = {
       to: "steven@cyberdojo.co", // Change to your recipient
-      from: "steven@cyberdojo.co", // Change to your verified sender
+      from: "contact@cyberdojo.co", // Change to your verified sender
       subject: body.subject,
       text: `This is ${body.name},
                  
