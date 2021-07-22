@@ -21,8 +21,8 @@ export default function WebsitesPage() {
           <div className={styles.service}>
             <h2>research &amp; strategy</h2>
             <p>
-              This is where we learn about your business and build a plan that's
-              right for you.
+              This is where we learn about your business and build a plan
+              that&apos;s right for you.
             </p>
             <ul>
               <li>discovery</li>
@@ -52,8 +52,8 @@ export default function WebsitesPage() {
           <div className={styles.service}>
             <h2>design</h2>
             <p>
-              This phase combines what we've learned into mock displays to give
-              you an idea how your site will look. All design reviews and
+              This phase combines what we&apos;ve learned into mock displays to
+              give you an idea how your site will look. All design reviews and
               changes will happen in this phase.
             </p>
             <ul>
