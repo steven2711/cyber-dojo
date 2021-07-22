@@ -1,6 +1,7 @@
-import Layout from "../components/Layout";
-import styles from "../styles/WebsitesPage.module.css";
-import Faq from "../components/Faq";
+import Layout from "../../components/Layout";
+import styles from "../../styles/WebsitesPage.module.css";
+import Faq from "../../components/Faq";
+import Button from "../../components/Button";
 
 export default function WebsitesPage() {
   return (
@@ -12,10 +13,16 @@ export default function WebsitesPage() {
         <div className={styles.showcase}>
           <h1>websites</h1>
           <p>
-            Modern web design is about giving your customers an amazing online
-            experience that ultimately leads them to one action; buy your
-            product or service.
+            Our primary goal is to build websites that help promote your
+            businesses products or services.
           </p>
+          <div className={styles.btnBox}>
+            <Button
+              text="get started"
+              link={true}
+              path="/websites/get-started"
+            />
+          </div>
         </div>
         <div className={styles.services}>
           <div className={styles.service}>
