@@ -47,7 +47,8 @@
 
 .service ul {
   margin: 3rem 0;
-  list-style: inside;
+  list-style-type: disc;
+  padding-left: 2rem;
 }
 
 .service ul li {
