@@ -10,17 +10,17 @@ export const websitesFaq = [
     open: false,
   },
   {
-    question: "How much do you charge?",
+    question: "How long does the process take?",
     answer: "kjbjsdjsjdnjsndjndjndkjnv",
     open: false,
   },
   {
-    question: "How much do you charge?",
+    question: "think?",
     answer: "kjbjsdjsjdnjsndjndjndkjnv",
     open: false,
   },
   {
-    question: "How much do you charge?",
+    question: "think?",
     answer: "kjbjsdjsjdnjsndjndjndkjnv",
     open: false,
   },

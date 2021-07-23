@@ -32,8 +32,6 @@ export default function ContactPage() {
       body: JSON.stringify(contactInfo),
     });
 
-    const data = await res.json();
-
     if (res.ok) {
       toast.success("We got your message!");
       setIsLoading(false);

@@ -25,6 +25,7 @@ export default function Faq() {
         <div key={index} className={styles.group}>
           <div className={styles.questionBox} onClick={() => toggleFaq(index)}>
             <h3>{question}</h3>
+            {open ? <div>-</div> : <div>+</div>}
           </div>
           <div className={open ? styles.answerBoxOpen : styles.answerBox}>
             <p>{answer}</p>
