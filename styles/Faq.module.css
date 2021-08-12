@@ -38,8 +38,8 @@
 .answerBox {
   opacity: 0;
   height: 0;
+  border: 1px solid green;
   overflow-y: hidden;
-  transition: all 0.4s ease;
 }
 
 .answerBox p {
@@ -48,14 +48,13 @@
 
 .answerBoxOpen p {
   opacity: 1;
-  transition: all 1s ease;
+  line-height: 1.5;
 }
 
 .answerBoxOpen {
   opacity: 1;
-  height: 2rem;
+  height: 100%;
   overflow-y: visible;
-  transition: all 0.4s ease;
 }
 
 .questionBox h3 {

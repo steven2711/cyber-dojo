@@ -1,8 +1,7 @@
-import { websitesFaq as data } from "../data/websitesFaq";
 import styles from "../styles/Faq.module.css";
 import { useState } from "react";
 
-export default function Faq() {
+export default function Faq({ data }) {
   const [faqs, setFaqs] = useState(data);
 
   const toggleFaq = (index) => {

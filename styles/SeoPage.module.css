@@ -1,0 +1,67 @@
+.showcase {
+  padding: 7rem 20rem;
+  background: linear-gradient(rgba(11, 37, 69, 0.8), rgba(11, 37, 69, 0.6)),
+    url("/images/seo.jpg") no-repeat center center/cover;
+  color: var(--mainWhite);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.showcase h1 {
+  font-size: var(--mainHeaderOneSize);
+  margin-bottom: 2rem;
+}
+
+.showcase p {
+  font-size: var(--mainParagraphSize);
+  text-align: center;
+  line-height: 1.5;
+}
+
+.container {
+  padding: 2rem 10rem;
+}
+
+.btnBox {
+  margin: 4rem 0 2rem;
+}
+
+.faqBox {
+  margin: 5rem 0;
+}
+
+.information h2 {
+  text-align: left;
+  margin: 2rem 0;
+}
+
+.information p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin: 1rem 0;
+  text-indent: 1.5rem;
+}
+
+@media (max-width: 1300px) {
+  .showcase {
+    padding: 5rem 10rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .showcase {
+    padding: 5rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .showcase {
+    padding: 3rem 2rem;
+  }
+
+  .information {
+    padding: 0 2rem;
+  }
+}

@@ -17,11 +17,11 @@
 .showcase p {
   font-size: var(--mainParagraphSize);
   text-align: center;
-  line-height: 1.3;
+  line-height: 1.5;
 }
 
 .btnBox {
-  margin-top: 4rem;
+  margin: 4rem 0 2rem;
 }
 
 .services {
@@ -30,7 +30,7 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.services h2 {
+.services h3 {
   font-size: 2rem;
   margin: 1rem 0;
 }
@@ -54,6 +54,10 @@
 .service ul li {
   font-size: 1.3rem;
   margin: 1rem 0;
+}
+
+.faqBox {
+  margin-bottom: 6rem;
 }
 
 @media (max-width: 1300px) {
@@ -102,6 +106,15 @@
 @media (max-width: 540px) {
   .showcase {
     padding: 3rem 2rem;
+  }
+
+  .container h2 {
+    margin: 0;
+  }
+
+  .getStarted {
+    padding: 0 2rem;
+    margin-bottom: 7rem;
   }
 
   .service {

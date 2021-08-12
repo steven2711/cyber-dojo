@@ -1,9 +1,9 @@
 export const services = [
   {
     title: "website development",
-    excerpt: "make more with better design",
+    excerpt: "design, build, grow",
     description:
-      "Modern web design is about giving your customers an amazing online experience that ultimately leads them to one action; buy your product or service. All websites are built with your customers in mind with a focus on speed, mobile responsiveness, SEO, logical page structure and with modern technologies.",
+      "When it comes to building a strong foundation for your growing business, nothing is more reliable than a website. Whether you're looking to get in touch with customers or potential clients, having an online presence speaks volumes.",
     path: "/websites",
     imagePath: "/images/web-development.jpg",
   },
@@ -11,7 +11,7 @@ export const services = [
     title: "search engine optimization",
     excerpt: "let your ideal customers find you",
     description:
-      "Having a robust SEO strategy is one of the most cost effective ways to generate organic traffic to your website. Contact us to have your site audited to find out if you have any untapped opportunities to rank better on search engines!",
+      "SEO is essential for every company whose ultimate goal is to attract customers, increase conversion rate and generate revenue. But it can be a full time (and full-on) job to manage your company’s SEO efforts. At Cyber Dojo, we manage your SEO for you so you can focus on growing your business.",
     path: "/seo",
     imagePath: "/images/seo.jpg",
   },
@@ -19,7 +19,7 @@ export const services = [
     title: "digital marketing",
     excerpt: "get the word out",
     description:
-      "Do you know who is visiting your website? Are these your ideal customers? Do your ideal customers know you even exist? We've helped businesses learn the habits, trends, and interests of their ideal customers to maximize conversions with each visit to their website.",
+      "Small businesses around the world are investing in digital marketing to help grow. There are so many channels to choose from. How do you determine the best strategy? Cyber Dojo offers a variety of resources and tools for small businesses looking to start or boost their online presence.",
     path: "/digital-marketing",
     imagePath: "/images/digital-marketing.jpg",
   },
@@ -27,7 +27,7 @@ export const services = [
     title: "branding",
     excerpt: "be recognizable",
     description:
-      "Branding is what sets your business apart from others. In today's age, attention has become a scarce commodity and consumers are doing more product research than ever. Effective digital branding across all channels gives you an opportunity to build credibility and authority in your domain.",
+      "Online branding is one of the best ways to increase your business awareness and differentiate yourself from the competition. Reinforcing your brand identity across multiple platforms is essential in building credibility and trust. We make sure your brand looks as good online as it does in real life. And we do it in a way that’s exciting, cost effective, and engaging.",
     path: "/digital-marketing",
     imagePath: "/images/branding.jpg",
   },

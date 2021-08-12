@@ -1,0 +1,29 @@
+.cta {
+  padding: 0 10rem;
+  text-align: center;
+  margin: 5rem 0;
+}
+
+.cta h2 {
+  font-size: 2rem;
+}
+
+.cta p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin: 2rem 0 4rem;
+}
+
+.cta hr:first-child {
+  margin-bottom: 2rem;
+}
+
+.cta hr:last-child {
+  margin-top: 4rem;
+}
+
+@media (max-width: 540px) {
+  .cta {
+    padding: 0 2rem;
+  }
+}
