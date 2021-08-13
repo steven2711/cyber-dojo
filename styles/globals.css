@@ -1,6 +1,7 @@
 :root {
   --mainBlue: #0b2545;
   --mainGreen: #197278;
+  --mainLightGreen: #5e9ca1;
   --mainWhite: #eef4ed;
   --mainRed: #db162f;
   --mainPink: #ef798a;
@@ -36,32 +37,4 @@
   --mainHeaderOneSize: 3rem;
   --mainParagraphSize: 1.5rem;
   --buttonTextSize: 1.1rem;
-}
-
-/* Global Tag Styling */
-
-/* Section Styling */
-section {
-  padding: 2rem 10rem;
-}
-
-section h2 {
-  font-size: 3rem;
-  text-align: center;
-}
-
-@media (max-width: 1024px) {
-  section {
-    padding: 3rem 4rem;
-  }
-}
-
-@media (max-width: 540px) {
-  section {
-    padding: 2rem 2rem;
-  }
-
-  section h2 {
-    font-size: 2rem;
-  }
 }

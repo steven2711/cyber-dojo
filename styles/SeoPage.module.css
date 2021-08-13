@@ -1,5 +1,5 @@
 .showcase {
-  padding: 7rem 20rem;
+  padding: 5rem 20rem;
   background: linear-gradient(rgba(11, 37, 69, 0.8), rgba(11, 37, 69, 0.6)),
     url("/images/seo.jpg") no-repeat center center/cover;
   color: var(--mainWhite);
@@ -20,10 +20,6 @@
   line-height: 1.5;
 }
 
-.container {
-  padding: 2rem 10rem;
-}
-
 .btnBox {
   margin: 4rem 0 2rem;
 }
@@ -32,25 +28,47 @@
   margin: 5rem 0;
 }
 
-.information h2 {
+.main {
+  padding: 1rem 20rem;
+  border: 1px solid yellow;
+}
+
+.main h2 {
   text-align: left;
   margin: 2rem 0;
 }
 
-.information p {
+.main p {
   font-size: 1.3rem;
-  line-height: 1.5;
+  line-height: 2;
   margin: 1rem 0;
   text-indent: 1.5rem;
 }
 
+.section {
+  margin-bottom: 8rem;
+  border: 1px solid green;
+}
+
+.section h2 {
+  font-size: 3rem;
+}
+
 @media (max-width: 1300px) {
   .showcase {
-    padding: 5rem 10rem;
+    padding: 3rem 10rem;
+  }
+
+  .main {
+    padding: 1rem 10rem;
   }
 
   .container {
     padding: 0;
+  }
+
+  .section {
+    margin-bottom: 4rem;
   }
 }
 
@@ -58,14 +76,26 @@
   .showcase {
     padding: 5rem;
   }
+
+  .main {
+    padding: 0 5rem;
+  }
 }
 
 @media (max-width: 540px) {
   .showcase {
-    padding: 3rem 2rem;
+    padding: 2rem;
   }
 
-  .container {
-    padding: 0;
+  .main {
+    padding: 1.2rem;
+  }
+
+  .section {
+    margin-bottom: 2rem;
+  }
+
+  .section h2 {
+    font-size: 2rem;
   }
 }
