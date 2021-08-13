@@ -16,11 +16,11 @@ export default function WebsitesPage() {
         <div className={styles.showcase}>
           <h1>websites</h1>
           <p>
-            If you have a small business but don't have a website, chances are
-            your competitors do. You could try to compete without one but why?
-            Using the power of the Internet can help your small business reach
-            more customers. Hit the button below and fill out the questionaire
-            to see how we can help!
+            If you have a small business but don&apos;t have a website, chances
+            are your competitors do. You could try to compete without one but
+            why? Using the power of the Internet can help your small business
+            reach more customers. Hit the button below and fill out the
+            questionaire to see how we can help!
           </p>
           <div className={styles.btnBox}>
             <Button
