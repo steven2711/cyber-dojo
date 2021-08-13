@@ -16,8 +16,8 @@ export default function SeoPage() {
         <h1>SEO</h1>
         <p>
           The online world can be complicated — and so can managing your online
-          presence. Cyber Dojo expertly manages your company’s SEO efforts, so
-          you can focus on what matters most to you. Audit your site today to
+          presence. Cyber Dojo expertly manages your company&apos;s SEO efforts,
+          so you can focus on what matters most to you. Audit your site today to
           learn more about your SEO opportunities!
         </p>
         <div className={styles.btnBox}>
