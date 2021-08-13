@@ -51,11 +51,11 @@ export default function SeoPage() {
             makes optimizing your business locally a high priority.
           </p>
           <p>
-            In 2021 (to date), Google accounted for just over 70% of all global
+            In 2021 to date, Google accounted for just over 70% of all global
             desktop search traffic, followed by Baidu at 13%, Bing at 12%, and
             Yahoo at 2%. On the first page alone, the first five organic results
-            account for 67.60% of all the clicks. These stats basically state
-            that it pays to be listed on top.
+            account for 67.60% of all the clicks. These stats reveal that it
+            pays to be listed on top.
           </p>
           <p>
             SEO is the most cost effective strategy way for businesses to
