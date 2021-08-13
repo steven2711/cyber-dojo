@@ -66,7 +66,7 @@ export default function SeoPage() {
         </section>
         <CTA
           title="get your audit"
-          text="It's no longer enough to just have a website, you need to put
+          text="It is no longer enough to just have a website, you need to put
             effort into making sure people can find you. Follow the link below for a free website audit on us!"
           btnText="audit my site"
         />

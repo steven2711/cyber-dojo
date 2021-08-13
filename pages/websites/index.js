@@ -132,7 +132,7 @@ export default function WebsitesPage() {
 
         <CTA
           title="Ready to get started?"
-          text=" Let's find out if our services are right for you! Fill out our client questionnaire to get started."
+          text=" Let us find out if our services are right for you! Fill out our client questionnaire to get started."
           btnText="get started"
           path="/websites/get-started"
         />
