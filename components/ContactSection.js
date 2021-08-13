@@ -7,7 +7,7 @@ export default function ContactSection() {
       <h2>let&apos;s talk business</h2>
       <p>
         Have a question about our services or would like to learn more? Contact
-        us and we'll get back to you within 24 hours.
+        us and we&apos;ll get back to you within 24 hours.
       </p>
       <Button text="contact us" link={true} path="/contact" />
     </section>

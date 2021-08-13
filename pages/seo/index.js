@@ -46,9 +46,9 @@ export default function SeoPage() {
           <h2>why is seo important for my businesses?</h2>
           <p>
             The Internet Age has made the demand for search engine optimization
-            (SEO) experts more acute than ever. In fact, more customers are
-            using search engines to find products and services than ever before,
-            which makes optimizing your business locally a high priority.
+            experts more acute than ever. In fact, more customers are using
+            search engines to find products and services than ever before, which
+            makes optimizing your business locally a high priority.
           </p>
           <p>
             In 2021 (to date), Google accounted for just over 70% of all global
@@ -78,3 +78,5 @@ export default function SeoPage() {
     </Layout>
   );
 }
+
+// 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
