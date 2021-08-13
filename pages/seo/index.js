@@ -30,8 +30,9 @@ export default function SeoPage() {
 
           <p>
             So what exactly is SEO? Search Engine Optimization is the act of
-            optimizing your business's website to meet certain criteria which
-            will help it rank in search engines like Google, Yahoo, and Bing.
+            optimizing your business&apos;s website to meet certain criteria
+            which will help it rank in search engines like Google, Yahoo, and
+            Bing.
           </p>
           <p>
             A search engine is a tool that lets people find information on the
@@ -39,7 +40,8 @@ export default function SeoPage() {
             important ones. When people use search engines, they typically start
             by typing in one or two words to describe something they need or
             want. The more times your website shows up when someone searches for
-            those one or two words, the more often someone will visit your site.
+            those one or two words, the better chances someone will visit your
+            site.
           </p>
           <h2>why is seo important for my businesses?</h2>
           <p>
@@ -60,16 +62,12 @@ export default function SeoPage() {
             acquire new customers.
           </p>
           <h2>What can Cyber Dojo do for me?</h2>
-          <p>
-            Search Engine Optimization is the act of optimizing your business's
-            website to meet certain criteria which will help it rank in search
-            engines like Google, Yahoo, and Bing.
-          </p>
+          <p></p>
         </section>
         <CTA
           title="get your audit"
           text="It's no longer enough to just have a website, you need to put
-            effort into making sure people can find you. Follow the link below and input your websites URL and email for a free website audit on us!"
+            effort into making sure people can find you. Follow the link below for a free website audit on us!"
           btnText="audit my site"
         />
         <div className={styles.faqBox}>

@@ -56,9 +56,9 @@ section h2 {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 540px) {
   section {
-    padding: 3rem 1rem;
+    padding: 2rem 2rem;
   }
 
   section h2 {

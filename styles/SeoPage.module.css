@@ -48,6 +48,10 @@
   .showcase {
     padding: 5rem 10rem;
   }
+
+  .container {
+    padding: 0;
+  }
 }
 
 @media (max-width: 900px) {
@@ -61,7 +65,7 @@
     padding: 3rem 2rem;
   }
 
-  .information {
-    padding: 0 2rem;
+  .container {
+    padding: 0;
   }
 }
