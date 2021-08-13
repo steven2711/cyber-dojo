@@ -66,11 +66,12 @@ export default function SeoPage() {
         <section className={styles.section}>
           <h2>What can Cyber Dojo do for me?</h2>
           <p>
-            You’ve heard people talk about SEO but you’re not quite sure if it’s
-            really effective as everyone seems to suggest. Naturally, you are
-            perfectly capable of selling your services and products, but with
-            more and more people beginning to take advantage of SEO to attract
-            customers, you might be wondering if it&apos;s right for you.
+            You’ve heard people talk about SEO but you&apos;re not quite sure if
+            it&apos;s really effective as everyone seems to suggest. Naturally,
+            you are perfectly capable of selling your services and products, but
+            with more and more people beginning to take advantage of SEO to
+            attract customers, you might be wondering if it&apos;s right for
+            you.
           </p>
           <p></p>
         </section>
