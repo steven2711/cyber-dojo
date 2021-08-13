@@ -16,9 +16,9 @@ export default function WebsitesPage() {
         <div className={styles.showcase}>
           <h1>websites</h1>
           <p>
-            A website isn't just an online brochure or a collection of pretty
-            pictures — it's a 24/7 salesperson for your business. Get started
-            today!
+            A website isn&apos;t just an online brochure or a collection of
+            pretty pictures — it&apos;s a 24/7 salesperson for your business.
+            Get started today!
           </p>
           <div className={styles.btnBox}>
             <Button
