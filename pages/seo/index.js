@@ -77,16 +77,16 @@ export default function SeoPage() {
               WE CANNOT GAURANTEE YOUR BUSINESS WILL BE LISTED ON TOP!
             </strong>{" "}
             Unfortunate, but true. Be skeptical if anyone claims they can offer
-            that as a gaurantee. It's not impossible. It just takes many years
-            and constant SEO vigilance battling against competitors and search
-            engine algorithms to get to the top.
+            that as a gaurantee. It&apos;s not impossible. It just takes many
+            years and constant SEO vigilance battling against competitors and
+            search engine algorithms to get to the top.
           </p>
         </section>
         <section className={styles.section}>
           <h2>Pricing</h2>
           <p>
             All pricing varies on your specific needs, but these packages can
-            give you an idea what's offered.
+            give you an idea what&apos;s offered.
           </p>
           <div className={styles.prices}>cards here</div>
         </section>
