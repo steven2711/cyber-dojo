@@ -12,8 +12,8 @@ export default function HomePage() {
     <Layout>
       <ServicesSection />
       <TestimonialSection />
-      <PortfolioSection />
-      <AuditSection />
+      {/* <PortfolioSection />
+      <AuditSection /> */}
       <ContactSection />
     </Layout>
   );

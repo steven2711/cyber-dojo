@@ -25,7 +25,7 @@ export default function SeoPage() {
         </div>
       </div>
 
-      <main className={styles.main}>
+      <div className={styles.main}>
         <section className={styles.section}>
           <h2>what is seo?</h2>
           <p>
@@ -40,6 +40,16 @@ export default function SeoPage() {
             through factors such as site speed, inbound links and quality
             content.
           </p>
+        </section>
+
+        <section className={styles.section}>
+          <h2>why is seo important for my business?</h2>
+          <p>
+            The Internet Age has made the demand for search engine optimization
+            experts more acute than ever. In fact, more customers are using
+            search engines to find products and services than ever before, which
+            makes optimizing your business locally a high priority.
+          </p>
           <StatBox
             text=" In 2021 to date, Google accounted for just over 70% of all global
         desktop search traffic, followed by Baidu at 13%, Bing at 12%, and Yahoo
@@ -47,16 +57,6 @@ export default function SeoPage() {
         for 67.60% of all the clicks. These stats reveal that it pays to be
         listed on top!"
           />
-        </section>
-
-        <section className={styles.section}>
-          <h2>why is seo important for my businesses?</h2>
-          <p>
-            The Internet Age has made the demand for search engine optimization
-            experts more acute than ever. In fact, more customers are using
-            search engines to find products and services than ever before, which
-            makes optimizing your business locally a high priority.
-          </p>
           <p>
             SEO is the most cost effective strategy way for businesses to
             acquire new customers.
@@ -66,16 +66,31 @@ export default function SeoPage() {
         <section className={styles.section}>
           <h2>What can Cyber Dojo do for me?</h2>
           <p>
-            You’ve heard people talk about SEO but you&apos;re not quite sure if
-            it&apos;s really effective as everyone seems to suggest. Naturally,
-            you are perfectly capable of selling your services and products, but
-            with more and more people beginning to take advantage of SEO to
-            attract customers, you might be wondering if it&apos;s right for
-            you.
+            We are passionate about online marketing and want to help people
+            make their websites work for them. We are results driven. Once we
+            understand your business goals, we strategize and create a plan that
+            actually works.
           </p>
-          <p></p>
+          <p>
+            One thing to note though;{" "}
+            <strong>
+              WE CANNOT GAURANTEE YOUR BUSINESS WILL BE LISTED ON TOP!
+            </strong>{" "}
+            Unfortunate, but true. Be skeptical if anyone claims they can offer
+            that as a gaurantee. It's not impossible. It just takes many years
+            and constant SEO vigilance battling against competitors and search
+            engine algorithms to get to the top.
+          </p>
         </section>
-      </main>
+        <section className={styles.section}>
+          <h2>Pricing</h2>
+          <p>
+            All pricing varies on your specific needs, but these packages can
+            give you an idea what's offered.
+          </p>
+          <div className={styles.prices}>cards here</div>
+        </section>
+      </div>
       <CTA
         title="get your audit"
         text="It is no longer enough to just have a website, you need to put

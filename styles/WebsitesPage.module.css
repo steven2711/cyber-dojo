@@ -24,6 +24,12 @@
   margin: 4rem 0 2rem;
 }
 
+.section h2 {
+  font-size: 2.3rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
 .services {
   padding: 2rem 10rem;
   display: grid;
@@ -106,10 +112,6 @@
 @media (max-width: 540px) {
   .showcase {
     padding: 2rem;
-  }
-
-  .container h2 {
-    margin: 0;
   }
 
   .getStarted {

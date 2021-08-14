@@ -19,7 +19,7 @@ export const services = [
     title: "digital marketing",
     excerpt: "get the word out",
     description:
-      "Small businesses around the world are investing in digital marketing to help grow. There are so many channels to choose from. How do you determine the best strategy? Cyber Dojo offers a variety of resources and tools for small businesses looking to start or boost their online presence.",
+      "Small businesses around the world are investing in digital marketing to help grow. There are so many channels to choose from. How do you determine the best strategy? Cyber Dojo offers a variety of resources and tools for small businesses looking to boost their online presence.",
     path: "/digital-marketing",
     imagePath: "/images/digital-marketing.jpg",
   },
