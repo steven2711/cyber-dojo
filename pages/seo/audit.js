@@ -15,6 +15,11 @@ export default function SeoAuditPage() {
 
   const [isLoading, setIsLoading] = useState(false);
 
+  const openResults = (auditResult) => {
+    let newWindow = window.open();
+    newWindow.document.write(auditResult);
+  };
+
   const handleChange = (e) => {
     setAuditInfo((prevalue) => {
       return { ...prevalue, [e.target.name]: e.target.value };
@@ -26,18 +31,16 @@ export default function SeoAuditPage() {
 
     setIsLoading(true);
 
-    const res = await fetch(`${NEXT_URL}/api/lighthouse`, {
-      method: "POST",
-      body: JSON.stringify(auditInfo),
-    });
+    const res = await fetch(
+      `https://lighthouse-audit.herokuapp.com/${auditInfo.url}`,
+      {
+        method: "GET",
+      }
+    );
 
     if (res.ok) {
       const result = await res.text();
-      // setAuditResults(result);
-
-      let newWindow = window.open();
-
-      newWindow.document.write(result);
+      setAuditResults(result);
 
       setIsLoading(false);
     } else {
@@ -89,6 +92,13 @@ export default function SeoAuditPage() {
             <Button text="submit form" type="submit" isLoading={isLoading} />
           </div>
         </form>
+        {auditResults ? (
+          <Button
+            text="see results"
+            type="button"
+            onClick={() => openResults(auditResults)}
+          />
+        ) : null}
       </section>
 
       <ContactSection />
