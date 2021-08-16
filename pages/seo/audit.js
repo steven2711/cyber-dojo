@@ -3,7 +3,8 @@ import styles from "../../styles/AuditPage.module.css";
 import Button from "../../components/Button";
 import ContactSection from "../../components/ContactSection";
 import { useState } from "react";
-import { NEXT_URL } from "../../config";
+import Loader from "../../components/Loader";
+import { FaToriiGate } from "react-icons/fa";
 
 export default function SeoAuditPage() {
   const [auditInfo, setAuditInfo] = useState({
@@ -58,49 +59,65 @@ export default function SeoAuditPage() {
     <Layout title="Audit | Cyber Dojo" description="">
       <div className={styles.showcase}>
         <h1>Audit</h1>
-        <p>This is a basic audit for your website.</p>
+        <p>
+          This is a basic audit that will give you an idea about your
+          website&apos;s health. Contact us if you have questions or would like
+          a more comprehensive audit.
+        </p>
       </div>
       <section className={styles.section}>
-        <h2>details about this audit</h2>
-        <form method="POST" onSubmit={handleSubmit} className={styles.form}>
-          <div className={styles.formgroup}>
-            <label htmlFor="url">URL</label>
-            <input
-              type="text"
-              id="url"
-              aria-describedby="enter url"
-              name="url"
-              value={auditInfo.url}
-              onChange={handleChange}
-              required
-            />
-          </div>
+        {!auditResults && !isLoading ? (
+          <form method="POST" onSubmit={handleSubmit} className={styles.form}>
+            <p>Please enter the URL in the correct format.</p>
+            <div className={styles.formgroup}>
+              <label htmlFor="url">URL</label>
+              <input
+                type="text"
+                id="url"
+                aria-describedby="enter url"
+                name="url"
+                placeholder="Ex. google.com"
+                value={auditInfo.url}
+                onChange={handleChange}
+                minLength="5"
+                required
+              />
+            </div>
 
-          <div className={styles.formgroup}>
-            <label htmlFor="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              aria-describedby="enter email"
-              name="email"
-              value={auditInfo.email}
-              onChange={handleChange}
-              required
+            <div className={styles.formgroup}>
+              <label htmlFor="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                aria-describedby="enter email"
+                name="email"
+                value={auditInfo.email}
+                onChange={handleChange}
+                minLength="5"
+                required
+              />
+            </div>
+            <div className={styles.btnBox}>
+              <Button text="submit audit" type="submit" isLoading={isLoading} />
+            </div>
+          </form>
+        ) : !auditResults && isLoading ? (
+          <div className={styles.loadingWindow}>
+            <p>Please wait. It may take up to 30 seconds to process...</p>
+            <Loader />
+          </div>
+        ) : auditResults && !isLoading ? (
+          <div className={styles.resultWindow}>
+            <FaToriiGate />
+            <p>Your results are ready!</p>
+            <Button
+              text="see results"
+              type="button"
+              onClick={() => openResults(auditResults)}
             />
           </div>
-          <div className={styles.btnBox}>
-            <Button text="submit form" type="submit" isLoading={isLoading} />
-          </div>
-        </form>
-        {auditResults ? (
-          <Button
-            text="see results"
-            type="button"
-            onClick={() => openResults(auditResults)}
-          />
         ) : null}
       </section>
-
       <ContactSection />
     </Layout>
   );

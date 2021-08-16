@@ -1,0 +1,19 @@
+.loader {
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.loader svg {
+  font-size: 6rem;
+  animation: rotation 2s infinite linear;
+  color: var(--mainGreen);
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

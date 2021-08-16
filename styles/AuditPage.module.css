@@ -1,6 +1,6 @@
 .showcase {
   padding: 5rem 20rem;
-  background: linear-gradient(rgba(11, 37, 69, 0.8), rgba(11, 37, 69, 0.6)),
+  background: linear-gradient(rgba(11, 37, 69, 0.8), rgba(11, 37, 69, 0.8)),
     url("/images/business-solutions.jpg") no-repeat center center/cover;
   color: var(--mainWhite);
   display: flex;
@@ -22,6 +22,87 @@
 
 .section {
   margin: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.form {
+  width: 550px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  padding: 2rem;
+}
+
+.formgroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 1rem 0;
+}
+
+.formgroup label {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.formgroup input {
+  height: 3rem;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  border-radius: 1rem;
+  border: 1px solid var(--mainGreen);
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.formgroup input:focus {
+  outline-color: var(--mainBlue);
+}
+
+.btnBox {
+  margin: 2rem 0;
+}
+
+.loadingWindow {
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  border-radius: 10px;
+}
+
+.loadingWindow p {
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+.resultWindow {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  border-radius: 10px;
+  width: 500px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.resultWindow p {
+  margin: 3rem 0;
+  font-size: 1.5rem;
+}
+
+.resultWindow svg {
+  font-size: 5rem;
+  color: var(--mainGreen);
 }
 
 @media (max-width: 1300px) {
@@ -39,5 +120,18 @@
 @media (max-width: 540px) {
   .showcase {
     padding: 2rem;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .section {
+    padding: 1rem;
+    margin: 2rem 0;
+  }
+
+  .resultWindow {
+    width: 100%;
   }
 }
