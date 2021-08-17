@@ -9,7 +9,10 @@ import StatBox from "../components/StatBox";
 
 export default function DigitalMarketingPage() {
   return (
-    <Layout title="Digital Marketing | Cyber Dojo" description="">
+    <Layout
+      title="Digital Marketing | Cyber Dojo"
+      description="Cyber Dojo helps businesses improve their digital marketing efforts by leveraging modern web technologies and strategies. Call today for a free consultation!"
+    >
       <div className={styles.showcase}>
         <h1>Digital Marketing</h1>
         <p></p>

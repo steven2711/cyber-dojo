@@ -11,7 +11,7 @@ export default function SeoPage() {
   return (
     <Layout
       title="SEO | Cyber Dojo"
-      description="Cyber Dojo specializes in search engine optimization. We offer professional services that include but are not limited to keyword research, link building, website analysis and registration. Call today for a free consultation."
+      description="Cyber Dojo specializes in search engine optimization. We offer professional services that include but are not limited to keyword research, link building, and website analysis. Call today for a free consultation."
     >
       <div className={styles.showcase}>
         <h1>SEO</h1>
@@ -32,13 +32,11 @@ export default function SeoPage() {
             So what exactly is SEO? Search Engine Optimization is the act of
             optimizing your business&apos;s website to meet certain criteria
             which will help it rank in search engines like Google, Yahoo, and
-            Bing.
-          </p>
-          <p>
-            Search engines are tools that let people find information on the
-            Internet. They have to decide which websites are the most important
-            through factors such as site speed, inbound links and quality
-            content.
+            Bing. Search engines have to decide which websites are the most
+            important through various factors such as site speed, inbound links
+            and quality content. The job of an SEO specialist is to fine-tune
+            your website and digital content to maximize the amount of search
+            engine traffic and conversions.
           </p>
         </section>
 

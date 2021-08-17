@@ -9,7 +9,10 @@ import StatBox from "../components/StatBox";
 
 export default function BusinessSolutionsPage() {
   return (
-    <Layout title="Business Solutions | Cyber Dojo" description="">
+    <Layout
+      title="Business Solutions | Cyber Dojo"
+      description=" Cyber Dojo builds solutions specific to your business."
+    >
       <div className={styles.showcase}>
         <h1>Business Solutions</h1>
         <p></p>
