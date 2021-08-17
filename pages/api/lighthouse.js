@@ -3,16 +3,14 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
-    const { url, email } = JSON.parse(req.body);
-
-    console.log(url, email);
+    const info = JSON.parse(req.body);
 
     const msg = {
       to: "steven@cyberdojo.co", // Change to your recipient
       from: "audit@cyberdojo.co", // Change to your verified sender
       subject: "Cyber Dojo | Basic Website Audit",
-      text: `URL: ${url},
-      Email: ${body.email}`,
+      text: `URL: ${info.url},
+        Email: ${info.email}`,
     };
 
     sgMail

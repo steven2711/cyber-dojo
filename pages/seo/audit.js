@@ -5,6 +5,8 @@ import ContactSection from "../../components/ContactSection";
 import { useState } from "react";
 import Loader from "../../components/Loader";
 import { FaToriiGate } from "react-icons/fa";
+import { urlValidationAndFix } from "../../helpers";
+import { NEXT_URL } from "../../config";
 
 export default function SeoAuditPage() {
   const [auditInfo, setAuditInfo] = useState({
@@ -13,7 +15,8 @@ export default function SeoAuditPage() {
   });
 
   const [auditResults, setAuditResults] = useState(null);
-
+  const [error, setError] = useState(false);
+  const [urlValidation, setUrlValidation] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
   const openResults = (auditResult) => {
@@ -30,29 +33,59 @@ export default function SeoAuditPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    setIsLoading(true);
+    if (!urlValidationAndFix(auditInfo.url)) {
+      setUrlValidation(true);
+      setAuditInfo((prevalue) => {
+        return { ...prevalue, url: "" };
+      });
 
-    const res = await fetch(
-      `https://lighthouse-audit.herokuapp.com/${auditInfo.url}`,
-      {
-        method: "GET",
-      }
-    );
-
-    if (res.ok) {
-      const result = await res.text();
-      setAuditResults(result);
-
-      setIsLoading(false);
+      setTimeout(() => {
+        setUrlValidation(false);
+      }, 5000);
     } else {
-      console.log(res);
-      setIsLoading(false);
-    }
+      setIsLoading(true);
 
-    setAuditInfo({
-      url: "",
-      email: "",
-    });
+      const cleanUrl = urlValidationAndFix(auditInfo.url);
+
+      try {
+        const res = await fetch(
+          `https://lighthouse-audit.herokuapp.com/${cleanUrl}`,
+          {
+            method: "GET",
+          }
+        );
+
+        if (res.ok) {
+          const result = await res.text();
+          setAuditResults(result);
+
+          setIsLoading(false);
+        } else {
+          console.log(res);
+          setIsLoading(false);
+        }
+      } catch (error) {
+        console.log(error);
+      }
+
+      try {
+        const res = await fetch(`${NEXT_URL}/api/lighthouse`, {
+          method: "POST",
+          body: JSON.stringify(auditInfo),
+        });
+
+        if (res.ok) {
+          console.log("Message sent!");
+        }
+      } catch (error) {
+        console.log(error);
+      }
+
+      setAuditInfo({
+        url: "",
+        email: "",
+      });
+    }
   };
 
   return (
@@ -82,6 +115,7 @@ export default function SeoAuditPage() {
                 minLength="5"
                 required
               />
+              {urlValidation ? <span>Please use requested format</span> : null}
             </div>
 
             <div className={styles.formgroup}>

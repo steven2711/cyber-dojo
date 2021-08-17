@@ -67,6 +67,10 @@
   outline-color: var(--mainBlue);
 }
 
+.form span {
+  color: red;
+}
+
 .btnBox {
   margin: 2rem 0;
 }
