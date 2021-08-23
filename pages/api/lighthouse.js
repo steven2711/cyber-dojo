@@ -9,8 +9,8 @@ export default async function handler(req, res) {
       to: "steven@cyberdojo.co", // Change to your recipient
       from: "audit@cyberdojo.co", // Change to your verified sender
       subject: "Cyber Dojo | Basic Website Audit",
-      text: `URL: ${info.url}
-        Email: ${info.email}`,
+      html: `<p>URL: ${info.url}</p>
+        <p>Email: ${info.email}</p>`,
     };
 
     sgMail

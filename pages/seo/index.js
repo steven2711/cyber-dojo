@@ -35,18 +35,17 @@ export default function SeoPage() {
             Bing. Search engines have to decide which websites are the most
             important through various factors such as site speed, inbound links
             and quality content. The job of an SEO specialist is to fine-tune
-            your website and digital content to maximize the amount of search
-            engine traffic and conversions.
+            your website and digital content to capture search engine traffic
+            and lead them to conversions.
           </p>
         </section>
 
         <section className={styles.section}>
           <h2>why is seo important for my business?</h2>
           <p>
-            The Internet Age has made the demand for search engine optimization
-            experts more acute than ever. In fact, more customers are using
-            search engines to find products and services than ever before, which
-            makes optimizing your business locally a high priority.
+            More customers are using search engines to find products and
+            services than ever before, which makes optimizing your business
+            locally a high priority.
           </p>
           <StatBox
             text=" In 2021 to date, Google accounted for just over 70% of all global
@@ -55,10 +54,7 @@ export default function SeoPage() {
         for 67.60% of all the clicks. These stats reveal that it pays to be
         listed on top!"
           />
-          <p>
-            SEO is the most cost effective strategy way for businesses to
-            acquire new customers.
-          </p>
+          <p></p>
         </section>
 
         <section className={styles.section}>
@@ -94,6 +90,7 @@ export default function SeoPage() {
         text="It is no longer enough to just have a website, you need to put
             effort into making sure people can find you. Follow the link below for a free website audit on us!"
         btnText="audit my site"
+        path="/seo/audit"
       />
       <div className={styles.faqBox}>
         <Faq data={data} />

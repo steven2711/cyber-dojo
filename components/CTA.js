@@ -14,3 +14,10 @@ export default function CTA({ title, text, btnText, path }) {
     </div>
   );
 }
+
+CTA.defaultProps = {
+  title: "insert a title",
+  text: "insert some text",
+  btnText: "button",
+  path: "/",
+};

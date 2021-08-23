@@ -24,14 +24,36 @@
   margin: 4rem 0 2rem;
 }
 
+.copy {
+  margin-bottom: 4rem;
+}
+
+.copy h2 {
+  font-size: 2.3rem;
+  margin: 1rem 0;
+}
+
+.copy p {
+  font-size: 1.3rem;
+  line-height: 2;
+  text-indent: 1.5rem;
+}
+
 .section h2 {
   font-size: 2.3rem;
-  text-align: center;
-  margin-top: 2rem;
+  margin: 1rem 0;
+}
+
+.section p {
+  font-size: 1.3rem;
+  line-height: 2;
+}
+
+.main {
+  padding: 2rem 20rem;
 }
 
 .services {
-  padding: 2rem 10rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -41,14 +63,14 @@
   margin: 1rem 0;
 }
 
-.service {
-  padding: 1rem 3rem;
+.services .service {
+  padding: 1rem;
 }
 
 .service p {
   font-size: 1.3rem;
   margin: 2rem 0;
-  line-height: 1.3;
+  line-height: 1.5;
 }
 
 .service ul {
@@ -73,11 +95,10 @@
 
   .services {
     grid-template-columns: 1fr 1fr;
-    padding: 1rem 5rem;
   }
 
-  .service {
-    padding: 1rem;
+  .main {
+    padding: 1rem 5rem;
   }
 
   .service ul {
@@ -90,12 +111,16 @@
     padding: 5rem;
   }
 
-  .services {
-    padding: 1rem;
+  .main {
+    padding: 2rem;
+  }
+
+  .section h2 {
+    margin-left: 1rem;
   }
 
   .service {
-    padding: 2rem;
+    padding: 0 2rem;
   }
 
   .service ul {
@@ -119,7 +144,7 @@
     margin-bottom: 7rem;
   }
 
-  .service {
-    padding: 1rem;
+  .section h2 {
+    margin-left: 0;
   }
 }
