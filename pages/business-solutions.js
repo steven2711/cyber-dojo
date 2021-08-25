@@ -33,13 +33,15 @@ export default function BusinessSolutionsPage() {
         <section className={styles.section}>
           <h2>What are the benefits?</h2>
           <ul>
-            <li>You'll save time on your business operations.</li>
+            <li>You&apos;ll save time on your business operations.</li>
             <li>Be more efficient with your time.</li>
             <li>
               Start seeing a return on investment in weeks, not months or years.
             </li>
-            <li>You'll get a solution that's tailored to your needs.</li>
-            <li>We're affordable and accessible.</li>
+            <li>
+              You&apos;ll get a solution that&apos;s tailored to your needs.
+            </li>
+            <li>We&apos;re affordable and accessible.</li>
             <li>Save time on data entry and tedious tasks.</li>
             <li></li>
             <li></li>
