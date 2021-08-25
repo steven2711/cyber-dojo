@@ -1,0 +1,55 @@
+.errorPage {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.textBox {
+  padding: 2rem;
+  text-align: center;
+}
+
+.textBox h1 {
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+.textBox p {
+  font-size: 1.3rem;
+}
+
+.textBox div {
+  margin-top: 4rem;
+}
+
+.textBox ul {
+  margin: 2rem 0;
+}
+
+.textBox ul li {
+  margin: 3rem 0;
+}
+
+.textBox ul li a {
+  font-size: 1.5rem;
+  color: var(--mainBlue);
+  cursor: pointer;
+}
+
+@media (max-width: 540px) {
+  .errorPage {
+    justify-content: flex-start;
+    height: auto;
+  }
+
+  .textBox ul li {
+    margin: 1rem 0;
+  }
+
+  .textBox {
+    padding: 1rem;
+    margin-bottom: 10rem;
+  }
+}

@@ -11,7 +11,7 @@ export default function BusinessSolutionsPage() {
   return (
     <Layout
       title="Business Solutions | Cyber Dojo"
-      description=" Cyber Dojo builds solutions specific to your business."
+      description="Cyber Dojo offers affordable software solutions that can take the pain out of everyday business processes. Call today for a free consultation."
     >
       <div className={styles.showcase}>
         <h1>Business Solutions</h1>
@@ -23,20 +23,31 @@ export default function BusinessSolutionsPage() {
 
       <div className={styles.main}>
         <section className={styles.section}>
-          <h2>is there a pain point in your business?</h2>
+          <h2>What are business solutions?</h2>
         </section>
 
         <section className={styles.section}>
-          <h2>solutions</h2>
+          <h2>How can we make your life easier?</h2>
         </section>
 
         <section className={styles.section}>
-          <h2>what we offer</h2>
+          <h2>What are the benefits?</h2>
+          <ul>
+            <li>You'll save time on your business operations.</li>
+            <li>Be more efficient with your time.</li>
+            <li>
+              Start seeing a return on investment in weeks, not months or years.
+            </li>
+            <li>You'll get a solution that's tailored to your needs.</li>
+            <li>We're affordable and accessible.</li>
+            <li>Save time on data entry and tedious tasks.</li>
+            <li></li>
+            <li></li>
+          </ul>
         </section>
 
         <section className={styles.section}>
-          <h2>Pricing</h2>
-          <div className={styles.prices}>cards here</div>
+          <h2>what we can do</h2>
         </section>
       </div>
       <div className={styles.faqBox}>

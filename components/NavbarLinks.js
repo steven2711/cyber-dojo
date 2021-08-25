@@ -81,7 +81,7 @@ export default function NavbarLinks({ open, setOpen }) {
     "websites",
     "seo",
     "digital-marketing",
-    "business-solutions",
+    // "business-solutions",
     "contact",
   ];
 

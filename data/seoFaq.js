@@ -2,7 +2,7 @@ export const seoFaq = [
   {
     question: "Is SEO illegal?",
     answer:
-      "Most websites range from $500 to $15,000, but every website is different! That's why we ask a ton of questions at the start. We want determine your goals are as a business and counsel you on what type of website can best help you acheive them.",
+      "SEO is legal, but it's also important to understand that some tactics are frowned upon. In fact, there are currently many people working in the SEO industry who still have jobs because they know how to fly under the radar. Always ask questions about a company's SEO methodlogies before going into business.",
     open: false,
   },
   {
@@ -12,9 +12,9 @@ export const seoFaq = [
     open: false,
   },
   {
-    question: "SEO",
+    question: "Can I just buy a comprehensive audit?",
     answer:
-      "It really depends on the size of the project. Smaller websites can take anywhere from two weeks to month while larger websites take six months to a year. We prioritize clear and concise communication throughout the process to ensure you know exactly what to expect.",
+      "Of course! We are here to help in any way possible. Contact us about pricing details for a comprehensive SEO audit.",
     open: false,
   },
 ];
