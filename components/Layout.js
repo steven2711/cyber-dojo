@@ -56,7 +56,7 @@ export default function Layout({
 
         {/* Google Analytics*/}
 
-        {/* <script
+        <script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
         />
@@ -73,7 +73,7 @@ export default function Layout({
             });
           `,
           }}
-        /> */}
+        />
 
         {/* No Index Tag */}
 
