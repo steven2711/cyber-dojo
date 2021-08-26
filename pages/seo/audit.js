@@ -89,7 +89,10 @@ export default function SeoAuditPage() {
   };
 
   return (
-    <Layout title="Audit | Cyber Dojo" description="">
+    <Layout
+      title="Audit | Cyber Dojo"
+      description="Get a free website audit from Cyber Dojo. We analyze your site, identify issues and provide recommendations to improve search engine rankings. Schedule an appointment today!"
+    >
       <div className={styles.showcase}>
         <h1>Audit</h1>
         <p>

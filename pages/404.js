@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function PageDoesNotExist() {
   return (
-    <Layout>
+    <Layout title="404">
       <div className={styles.errorPage}>
         <div className={styles.textBox}>
           <h1>Oops... looks like this page doesn&apos;t exist</h1>

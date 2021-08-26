@@ -77,7 +77,10 @@ export default function GetStartedPage() {
   };
 
   return (
-    <Layout title="Get Started | Cyber Dojo" description="">
+    <Layout
+      title="Get Started | Cyber Dojo"
+      description="Cyber Dojo provides custom web design and development services for small businesses. Fill out our form to see if our services are right for you."
+    >
       <div className={styles.getStarted}>
         <div className={styles.showcase}>
           <h1>get started</h1>

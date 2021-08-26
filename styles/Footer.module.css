@@ -1,14 +1,12 @@
 .footer {
   text-align: center;
   width: 100%;
-  bottom: 0;
-  height: 150px;
+  padding: 3rem;
   background: var(--mainGreen);
   color: white;
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-evenly;
 }
 
 .footer p {
@@ -17,4 +15,99 @@
 
 .footer a {
   color: var(--mainWhite);
+}
+
+.logo p {
+  font-size: 1.2rem;
+}
+
+.logo h2 {
+  font-size: 3rem;
+}
+
+.links ul li {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.links ul li a {
+  font-size: 1.3rem;
+}
+
+.links ul li a:hover {
+  color: var(--mainYellow);
+  text-decoration: underline;
+  transition: all 0.2s ease;
+}
+
+.disc ul li {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.disc ul li a {
+  font-size: 1.3rem;
+}
+
+.disc ul li a:hover {
+  color: var(--mainYellow);
+  text-decoration: underline;
+  transition: all 0.2s ease;
+}
+
+.socials svg {
+  font-size: 1.5rem;
+  margin: 0 1.5rem;
+}
+
+.socials svg:hover {
+  color: var(--mainYellow);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .logo h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .socials svg {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem 2rem;
+  }
+
+  .logo {
+    margin-bottom: 2rem;
+  }
+
+  .links {
+    margin-bottom: 2rem;
+  }
+
+  .links ul li {
+    text-align: center;
+  }
+
+  .disc {
+    margin-bottom: 2rem;
+  }
+
+  .disc ul li {
+    text-align: center;
+  }
+
+  .socials {
+    margin: 2rem 0;
+    font-size: 2rem;
+  }
 }
