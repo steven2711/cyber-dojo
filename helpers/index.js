@@ -18,10 +18,8 @@ export const urlValidationAndFix = (url) => {
   }
 
   if (newUrl.includes(".")) {
-    console.log(newUrl);
     return newUrl;
   } else {
-    console.log(newUrl);
     return false;
   }
 };

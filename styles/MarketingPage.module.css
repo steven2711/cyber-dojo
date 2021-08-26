@@ -12,6 +12,7 @@
 .showcase h1 {
   font-size: var(--mainHeaderOneSize);
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .showcase p {
