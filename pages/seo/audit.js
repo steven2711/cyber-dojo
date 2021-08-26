@@ -69,7 +69,7 @@ export default function SeoAuditPage() {
       }
 
       try {
-        const res = await fetch(`${NEXT_URL}/api/lighthouse`, {
+        const res = await fetch(`https://www.cyberdojo.co/api/lighthouse`, {
           method: "POST",
           body: JSON.stringify(auditInfo),
         });
