@@ -55,8 +55,7 @@
 
 .section ul {
   list-style-type: circle;
-  list-style-position: inside;
-  margin: 3rem 0;
+  margin: 3rem;
 }
 
 .section ul li {
