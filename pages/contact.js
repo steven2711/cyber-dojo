@@ -29,7 +29,7 @@ export default function ContactPage() {
 
     setIsLoading(true);
 
-    const res = await fetch(`${NEXT_URL}/api/contact`, {
+    const res = await fetch(`https://www.cyberdojo.co/api/contact`, {
       method: "POST",
       body: JSON.stringify(contactInfo),
     });
