@@ -47,7 +47,7 @@ export default function WebsitesPage() {
             Also, websites need to be mobile friendly. If your customers find it
             difficult to navigate your website on a mobile device, they may get
             frustrated and leave. It&apos;s always good to have a professional
-            audit your site for any improvements or upgrades.
+            audit of your site for any improvements or upgrades.
           </p>
         </section>
         <section className={styles.copy}>
