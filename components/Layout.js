@@ -12,6 +12,8 @@ export default function Layout({
   description,
   imagePath,
   children,
+  noIndex,
+  url,
 }) {
   const router = useRouter();
 
@@ -32,7 +34,7 @@ export default function Layout({
 
         {/* Facebook Meta Tags */}
 
-        <meta property="og:url" content="https://www.cyberdojo.io/" />
+        <meta property="og:url" content={url} />
         <meta property="og:type" content="website" />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
@@ -46,6 +48,10 @@ export default function Layout({
         <meta name="twitter:image" content={imagePath} />
 
         {/* Google Search Console Verification */}
+
+        {/* No Index Tag */}
+
+        {noIndex ? <meta name="robots" content="noindex,nofollow" /> : null}
       </Head>
 
       <Header />
@@ -59,9 +65,12 @@ export default function Layout({
 }
 
 Layout.defaultProps = {
-  title: "Cyber Dojo | Building better online strategies for small businesses",
+  title: "Cyber Dojo | Web Design & Digital Marketing Agency",
   description:
-    "Cyber Dojo is a digital development and marketing agency focuses on increasing businesses profitability through modern online methodologies.",
-  keywords: "",
-  imagePath: "",
+    "Cyber Dojo offers website design, development, SEO, and digital marketing services to help small businesses thrive online. Located in Murfreesboro, TN.",
+  keywords:
+    "websites, digital marketing, SEO, web design, web development, Murfreesboro",
+  imagePath: "/images/people-working-on-computers-540.jpg",
+  url: "https://www.cyberdojo.io/",
+  noIndex: false,
 };

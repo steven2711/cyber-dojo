@@ -62,6 +62,7 @@ export default function WebsitesPage() {
         </section>
         <section className={styles.section}>
           <h2>our process</h2>
+          <hr />
           <div className={styles.services}>
             <div className={styles.service}>
               <h3>research &amp; strategy</h3>

@@ -1,11 +1,13 @@
 import Layout from "../components/Layout";
 import Button from "../components/Button";
 import styles from "../styles/ContactPage.module.css";
-import { ToastContainer, toast } from "react-toastify";
 import { useState } from "react";
+import { useRouter } from "next/router";
 import { NEXT_URL } from "../config";
 
 export default function ContactPage() {
+  const router = useRouter();
+
   const [contactInfo, setContactInfo] = useState({
     name: "",
     email: "",
@@ -32,12 +34,21 @@ export default function ContactPage() {
       body: JSON.stringify(contactInfo),
     });
 
+    const data = await res.json();
+
     if (res.ok) {
-      toast.success("We got your message!");
       setIsLoading(false);
+      router.push({
+        pathname: "/thank-you",
+        query: { data: "contact" },
+      });
     } else {
-      toast.error("Oops... something went wrong!");
       setIsLoading(false);
+      console.log(data);
+      router.push({
+        pathname: "/error",
+        query: { data: "contactFormError" },
+      });
     }
 
     setContactInfo({
@@ -55,17 +66,6 @@ export default function ContactPage() {
       description="Send us a message to see if our sevices are right for you! Our goal
     is to ensure you choose the best option for your business needs. Fill out the form on this page to get started!"
     >
-      <ToastContainer
-        position="top-right"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable={false}
-        pauseOnHover
-      />
       <div className={styles.contact}>
         <div className={styles.showcase}>
           <h1>contact us</h1>
@@ -104,6 +104,7 @@ export default function ContactPage() {
               aria-describedby="enter email"
               placeholder="Email"
               name="email"
+              pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$"
               minLength="5"
               value={contactInfo.email}
               onChange={handleChange}

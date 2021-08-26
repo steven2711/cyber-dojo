@@ -13,16 +13,14 @@ export default async function handler(req, res) {
         <p>Email: ${info.email}</p>`,
     };
 
-    sgMail
-      .send(msg)
-      .then(() => {
-        res.status(200).json({ message: "Successful" });
-      })
-      .catch((error) => {
-        console.log(error);
-        res.json({ error: "Oops, check the console for error." });
-      });
+    try {
+      const data = await sgMail.send(msg);
+      return res.status(200).json({ message: "Successfully sent client form" });
+    } catch (error) {
+      console.error(error);
+      return res.json({ message: "Failure in lighthouse route" });
+    }
   } else {
-    res.json({ msg: "Request method not allowed!" });
+    return res.json({ msg: "Request method not allowed!" });
   }
 }
