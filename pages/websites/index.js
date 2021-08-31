@@ -115,7 +115,7 @@ export default function WebsitesPage() {
               <h3>development</h3>
               <p>
                 Time to build. We take your vision and bring it to life
-                utilizing modern technologies and methodoligies.
+                utilizing modern technologies and methodologies.
               </p>
               <ul>
                 <li>frontend development</li>
