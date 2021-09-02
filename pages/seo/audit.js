@@ -98,8 +98,8 @@ export default function SeoAuditPage() {
         <h1>Audit</h1>
         <p>
           This is a basic audit that will give you an idea about your
-          website&apos;s health. Contact us if you have questions or would like
-          a more comprehensive audit.
+          website&apos;s health within 60 seconds. Contact us if you have
+          questions or would like a more comprehensive audit.
         </p>
       </div>
       <section className={styles.section}>
@@ -141,7 +141,7 @@ export default function SeoAuditPage() {
           </form>
         ) : !auditResults && isLoading ? (
           <div className={styles.loadingWindow}>
-            <p>Please wait. It may take up to 30 seconds to process...</p>
+            <p>Please wait. It may take up to 60 seconds to process...</p>
             <Loader />
           </div>
         ) : auditResults && !isLoading ? (
