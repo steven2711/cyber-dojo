@@ -5,7 +5,7 @@ import ContactSection from "../../components/ContactSection";
 import { useState } from "react";
 import Loader from "../../components/Loader";
 import { FaToriiGate } from "react-icons/fa";
-import { urlValidationAndFix } from "../../helpers";
+import { urlTrim } from "../../helpers";
 import { NEXT_URL } from "../../config";
 
 export default function SeoAuditPage() {
@@ -15,8 +15,7 @@ export default function SeoAuditPage() {
   });
 
   const [auditResults, setAuditResults] = useState(null);
-  const [error, setError] = useState(false);
-  const [urlValidation, setUrlValidation] = useState(false);
+  const [urlValidation, setUrlValidation] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
   const openResults = (auditResult) => {
@@ -30,62 +29,64 @@ export default function SeoAuditPage() {
     });
   };
 
+  const errorHandler = (msg) => {
+    setUrlValidation(msg);
+
+    setTimeout(() => {
+      setUrlValidation(null);
+    }, 5000);
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!urlValidationAndFix(auditInfo.url)) {
-      setUrlValidation(true);
-      setAuditInfo((prevalue) => {
-        return { ...prevalue, url: "" };
+    setIsLoading(true);
+
+    const trimmedUrl = urlTrim(auditInfo.url);
+
+    const devRoute = "http://localhost:5000/test";
+    const productionRoute = "https://lighthouse-audit.herokuapp.com/test";
+
+    try {
+      const res = await fetch(productionRoute, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+        method: "POST",
+        body: JSON.stringify({ url: trimmedUrl }),
       });
 
-      setTimeout(() => {
-        setUrlValidation(false);
-      }, 5000);
-    } else {
-      setIsLoading(true);
-
-      const cleanUrl = urlValidationAndFix(auditInfo.url);
-
-      try {
-        const res = await fetch(
-          `https://lighthouse-audit.herokuapp.com/${cleanUrl}`,
-          {
-            method: "GET",
-          }
-        );
-
-        if (res.ok) {
-          const result = await res.text();
-          setAuditResults(result);
-
-          setIsLoading(false);
-        } else {
-          console.log(res);
-          setIsLoading(false);
-        }
-      } catch (error) {
-        console.log(error);
+      if (res.ok) {
+        const result = await res.text();
+        setAuditResults(result);
+        setIsLoading(false);
+      } else {
+        const { msg } = await res.json();
+        setIsLoading(false);
+        errorHandler(msg);
       }
-
-      try {
-        const res = await fetch(`https://www.cyberdojo.co/api/lighthouse`, {
-          method: "POST",
-          body: JSON.stringify(auditInfo),
-        });
-
-        if (res.ok) {
-          console.log("Message sent!");
-        }
-      } catch (error) {
-        console.log(error);
-      }
-
-      setAuditInfo({
-        url: "",
-        email: "",
-      });
+    } catch (error) {
+      console.log(error);
+      setIsLoading(false);
     }
+
+    try {
+      const res = await fetch(`https://www.cyberdojo.co/api/lighthouse`, {
+        method: "POST",
+        body: JSON.stringify(auditInfo),
+      });
+
+      if (res.ok) {
+        console.log("Message sent!");
+      }
+    } catch (error) {
+      console.log(error);
+    }
+
+    setAuditInfo({
+      url: "",
+      email: "",
+    });
   };
 
   return (
@@ -118,7 +119,7 @@ export default function SeoAuditPage() {
                 minLength="5"
                 required
               />
-              {urlValidation ? <span>Please use requested format</span> : null}
+              {urlValidation ? <span>{urlValidation}</span> : null}
             </div>
 
             <div className={styles.formgroup}>

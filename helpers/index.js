@@ -6,20 +6,23 @@ export const removeDash = (phrase) => {
   return removedDash;
 };
 
-export const urlValidationAndFix = (url) => {
+export const urlTrim = (url) => {
   // Looking for a google.com format. Basically no protocols. Check for extension.
 
-  let newUrl = url;
+  let trimmedUrl = url;
+
+  // Trim protocol
 
   if (url.includes("https://")) {
-    newUrl = url.slice(8);
+    trimmedUrl = url.slice(8);
   } else if (url.includes("http://")) {
-    newUrl = url.slice(7);
+    trimmedUrl = url.slice(7);
   }
 
-  if (newUrl.includes(".")) {
-    return newUrl;
-  } else {
-    return false;
+  // Remove trailing slash
+  if (trimmedUrl.includes("/")) {
+    trimmedUrl = trimmedUrl.replace("/", " ");
   }
+
+  return trimmedUrl;
 };
