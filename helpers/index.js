@@ -26,3 +26,18 @@ export const urlTrim = (url) => {
 
   return trimmedUrl;
 };
+
+export const sendLighthouseEmail = async (info) => {
+  try {
+    const res = await fetch(`https://www.cyberdojo.co/api/lighthouse`, {
+      method: "POST",
+      body: JSON.stringify(info),
+    });
+
+    if (res.ok) {
+      console.log("Message sent!");
+    }
+  } catch (error) {
+    console.log(error);
+  }
+};

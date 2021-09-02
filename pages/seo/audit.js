@@ -5,7 +5,7 @@ import ContactSection from "../../components/ContactSection";
 import { useState } from "react";
 import Loader from "../../components/Loader";
 import { FaToriiGate } from "react-icons/fa";
-import { urlTrim } from "../../helpers";
+import { urlTrim, sendLighthouseEmail } from "../../helpers";
 import { NEXT_URL } from "../../config";
 
 export default function SeoAuditPage() {
@@ -60,6 +60,8 @@ export default function SeoAuditPage() {
         const result = await res.text();
         setAuditResults(result);
         setIsLoading(false);
+
+        sendLighthouseEmail(auditInfo);
       } else {
         const { msg } = await res.json();
         setIsLoading(false);
@@ -68,19 +70,6 @@ export default function SeoAuditPage() {
     } catch (error) {
       console.log(error);
       setIsLoading(false);
-    }
-
-    try {
-      const res = await fetch(`https://www.cyberdojo.co/api/lighthouse`, {
-        method: "POST",
-        body: JSON.stringify(auditInfo),
-      });
-
-      if (res.ok) {
-        console.log("Message sent!");
-      }
-    } catch (error) {
-      console.log(error);
     }
 
     setAuditInfo({
