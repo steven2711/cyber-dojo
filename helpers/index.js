@@ -19,10 +19,12 @@ export const urlTrim = (url) => {
     trimmedUrl = url.slice(7);
   }
 
-  // Remove trailing slash
+  //Remove trailing slash
   if (trimmedUrl.includes("/")) {
     trimmedUrl = trimmedUrl.replace("/", " ");
   }
+
+  console.log(trimmedUrl);
 
   return trimmedUrl;
 };
