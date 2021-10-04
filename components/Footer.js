@@ -58,7 +58,13 @@ export default function Footer() {
         </ul>
       </div>
       <div className={styles.socials}>
-        <FaFacebookF />
+        <a
+          href="https://www.facebook.com/Cyber-Dojo-101691402294057"
+          target="_blank"
+          rel="noreferer"
+        >
+          <FaFacebookF />
+        </a>
         <FaInstagram />
       </div>
     </footer>

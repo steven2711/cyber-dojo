@@ -99,7 +99,11 @@ export default function NavbarLinks({ open, setOpen }) {
 
       <ul>
         <li>
-          <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.facebook.com/Cyber-Dojo-101691402294057"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaFacebookF title="Facebook" />
           </a>
         </li>
