@@ -8,6 +8,7 @@ export default async function handler(req, res) {
     const {
       name,
       email,
+      phone,
       question1,
       question2,
       question3,
@@ -25,6 +26,7 @@ export default async function handler(req, res) {
     
     Name: ${name}
     Email: ${email}
+    Phone: ${phone}
 
     Client Questionarrie
 
@@ -64,7 +66,7 @@ export default async function handler(req, res) {
 
     ${question9}
 
-    10. When would you like the project completed by?
+    10. Is there anything else you’d like to let me know about?
 
     ${question10}
 

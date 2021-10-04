@@ -11,6 +11,7 @@ export default function GetStartedPage() {
   const [clientInfo, setClientInfo] = useState({
     name: "",
     email: "",
+    phone: "",
     question1: "",
     question2: "",
     question3: "",
@@ -62,6 +63,7 @@ export default function GetStartedPage() {
     setClientInfo({
       name: "",
       email: "",
+      phone: "",
       question1: "",
       question2: "",
       question3: "",
@@ -109,6 +111,20 @@ export default function GetStartedPage() {
 
             <div className={styles.formgroup}>
               <label htmlFor="email">email address</label>
+              <input
+                type="tel"
+                id="phone"
+                aria-describedby="phone"
+                name="phone"
+                minLength="15"
+                value={clientInfo.phone}
+                onChange={handleChange}
+                required
+              />
+            </div>
+
+            <div className={styles.formgroup}>
+              <label htmlFor="email">phone number</label>
               <input
                 type="email"
                 id="email"
