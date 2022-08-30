@@ -27,10 +27,7 @@ export default function ErrorPage() {
           <section className={styles.container}>
             <FaToriiGate />
             <h1>Oops...</h1>
-            <p>
-              Looks like something went wrong on our end. Sorry for the
-              inconvenience. Our team is on it!
-            </p>
+            <p>Looks like something went wrong on our end. Sorry for the inconvenience. Our team is on it!</p>
             <div className={styles.button}>
               <Button link={true} text="home page" path="/" />
             </div>

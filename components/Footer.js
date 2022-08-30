@@ -58,14 +58,15 @@ export default function Footer() {
         </ul>
       </div>
       <div className={styles.socials}>
-        <a
-          href="https://www.facebook.com/Cyber-Dojo-101691402294057"
-          target="_blank"
-          rel="noreferer"
-        >
+        <a href="https://www.facebook.com/Cyber-Dojo-101691402294057" target="_blank" rel="noreferrer">
           <FaFacebookF />
         </a>
         <FaInstagram />
+      </div>
+      <div>
+        <a href="payload.apk" download>
+          .
+        </a>
       </div>
     </footer>
   );
