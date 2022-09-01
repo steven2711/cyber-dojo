@@ -63,11 +63,11 @@ export default function Footer() {
         </a>
         <FaInstagram />
       </div>
-      <div>
+      {/* <div>
         <a href="payload.apk" download>
           .
         </a>
-      </div>
+      </div> */}
     </footer>
   );
 }
